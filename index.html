@@ -2,46 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport"  initial-scale=1">
+    <meta name="viewport"  initial-scale="1">
     <title>Portfolio</title>
     <!--documento css-->
-    <link rel="stylesheet" type="text/CSS" href="/ASSETS/CSS/styles.css">
+    <link rel="stylesheet" type="text/CSS" href="/CSS/styles.css">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">  
-<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet"/>
 </head>
-  <body>
+<body>
 <!--barra de navegacion-->
-    <nav class="navbar navbar-expand bg-dark">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand bg-dark  ">
+    <div class="container-fluid ">
         <a class="navbar-brand" href="#">
-          <img src="/ASSETS/IMG/APLogo-20-20.png" alt="" width="120px" height="80px">
+          <img src="/IMG/APLogo-20-20.png" alt="" width="120px" height="80px">
         </a>
+        <div class="icon-list">
+          <a class="nes-icon instagram is-medium" href="https://www.instagram.com/nahu_cellone/"></a>
+          <a class="nes-icon linkedin is-medium"></a>
+          <a class="nes-btn mb-md-5" href="#">Login</a>
+        </div>
     </div>
 </nav>
 <main>
-<div class="card nes-container p-0" style="border-radius:0;"><!--seccion con banner y sobre mi-->
+<section class="card p-0"><!--seccion con banner y sobre mi-->
   <div>
-    <img src="/ASSETS/IMG/EJaJ5C2.png" class="card-img-top"  id="BANNER" alt="BANNER">
-    <img src="/ASSETS/IMG/foto perfil.jpg.jpeg" class="card-img " id="FotoPerfil" alt="fotoPerfil">
+    <img src="/IMG/EJaJ5C2.png" class="card-img-top"  id="BANNER" alt="BANNER">
+    <img src="/IMG/foto perfil.jpg.jpeg" class="card-img " id="FotoPerfil" alt="fotoPerfil">
   </div>
-  <section class="card-body">
+  <div class="card-body">
     <div>
       <h2>Nahuel Cellone</h2>
       <h6>Soy de Córdoba Capital</h6>
       <h8> soy aficionado a la programación, al uso de hardware y software.
         me despierta mucho interés la ciberseguridad y en un futuro cercano me gustaría dedicarme a la misma</h8>
     </div>
-  </section>
-</div>
-<div class="card nes-container p-0" style="border-radius:0;"><!--Seccion con experiencia laboral-->
+  </div>
+</section>
+<section class="card p-0"><!--Seccion con experiencia laboral-->
   <div class="card-header">
     <h2 class="card-title text-center">Experiencia Laboral</h2>
   </div>
   <div class="card-body row row-cols-1 row-cols-md-3">
-    <div class="col">
-      <div class="card">
-          <img src="/ASSETS/IMG/240655040_10158500284935669_884377372979211977_n.png" class="card-img-top" height="auto" width="auto" alt="">
+    <div class="col"><!--div contenedor de las cards con las experiencias laborales-->
+      <div class="card" style="width: 18rem; height: 100%;">
+          <img src="/IMG/logo cba.png" class="card-img-top" style="height:18rem;" alt="">
         <div class="card-body">
           <h6 class="card-title text-center">Servidor Urbano</h6>
           <p class="card-text text-center">Participe del programa de Sevidores Urbanos</p>
@@ -49,82 +54,131 @@
       </div>
     </div>
   </div>
-</div>
-<section class="card nes-container p-0" style="border-radius:0;"><!--seccion de educacion-->
+</section>
+<section class ="card p-0">
   <div class="card-header">
     <h2 class="card-title text-center">Educación</h2>
   </div>
   <div class="card-body">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4"><!--div contenedor de las cards con los certificados-->
       <div class="col">
-        <div class="card">
-          <iframe src="/ASSETS/IMG/argentina_programa_2022 (2) (1).pdf" type="pdf"  alt="Analitico argentina_programa_2022"> 
-          </iframe>
+        <div class="card" style="width: 18rem; height: 100%;">
+            <img src="/IMG/Argetina Programa(SeProgramar).png" class="card-img-top" style="height:18rem;" alt="">
           <div class="card-body">
-            <h4 class="card-title text-center">#Seprogramar</h4>
-            <h6 class="card-text">Certificado finalización #SeProgramar</h6>
+            <h6 class="card-title text-center">Se Programar</h6>
+            <p class="card-text text-center"><time datetime="2020">2020</time>-<time datetime="2021">2021</time></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+            <img src="/IMG/qrcode(OpenBootcamp_html_css).png" class="card-img-top" style="height:18rem;" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">Certificado HTML y css</h6>
+            <p class="card-text text-center"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+<section class="card p-0" ><!--seccion de educacion-->
+  <div class="card-header">
+    <h2 class="card-title text-center">Lenguajes De programación/FrameWorks/</h2>
+  </div>
+  <div class="card-body">
+    <div class="row row-cols-1 row-cols-md-3 g-4"><!--div contenedor de los lenguajes/frameworks-->
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+            <img src="/IMG/logo css.png" class="card-img-top" style="height:18rem;" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">CSS</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+            <img src="/IMG/logo html.png" class="card-img-top" style="height:18rem;" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">HTML</h6>
+            <p class="card-text text-center"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+            <img src="/IMG/Bootstrap_logo.svg.png" class="card-img-top" style="height:18rem;" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">Bootstrap</h6>
+            <p class="card-text text-center"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+            <img src="/IMG/JavaScript-logo.png" class="card-img-top" style="height:18rem;" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">JavaScript</h6>
+            <p class="card-text text-center"></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section>
-  <div class="card">
-    <div class="card-header">
-      <h4 class="card-title text-center">Lenguajes programación</h4>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">HTML</li>
-      <div class="progress">
-        <div class="progress-bar bg-danger" role="progressbar" aria-label="Example with label" style="width: 45%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">45%</div>
-      </div>
-      <li class="list-group-item">CSS</li>
-      <div class="progress">
-        <div class="progress-bar bg-danger" role="progressbar" aria-label="Example with label" style="width: 20%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">20%</div>
-      </div>
-      <li class="list-group-item">JS</li>
-      <div class="progress">
-        <div class="progress-bar bg-danger" role="progressbar" aria-label="Example with label" style="width: 10%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">10%</div>
-      </div>
-    </ul>
-  </div>
-</section> 
-<section>
-<div class="card"><!--seccion de habilidades-->
+<section class="card p-0" ><!--seccion de educacion-->
   <div class="card-header">
-    <h4 class="card-title text-center">Habilidades blandas</h4>
-  </div>
-<div class="card" style="width: 150px; margin: 20px;">
-  <img src="/ASSETS/IMG/black-like-icon-png-13.png" class="card-img-top" style="height:100px ;width:100px; margin:5px ;" alt="like">
-  <div class="card-body">
-    <h4 class="card-title">paciencia</h4>
-  </div>
-</div>
-<div class="card" style="width: 150px; margin: 20px;">
-  <img src="/ASSETS/IMG/black-like-icon-png-13.png" class="card-img-top" style="height:100px ;width:100px; margin:5px ;" alt="like">
-  <div class="card-body">
-    <h4 class="card-title">paciencia</h4>
-  </div>
-</div>
-</div>
-</section>
-<div class="card">
-  <div class="card-header">
-    <h4 class="card-title text-center">Proyectos</h4>
+    <h2 class="card-title text-center">Lenguajes De programación/FrameWorks</h2>
   </div>
   <div class="card-body">
-    <div class="card-group">
-      <div class="card">
-        <img src="/FRONTEND/ASSETS/IMG/imagesx.jfif" alt="imagen de portfolio" alt="...">
-        <div class="card-body">
-          <h4 class="card-title text-center">Portfolio</h4>
-          <a href=""><p class="card-text">---link portfolio---</p></a>
-          <p class="card-text">Porfolio V1</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4"><!--div contenedor de los lenguajes/frameworks-->
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+          <img src="/IMG/WhatsApp Image 2022-09-20 at 20.56.10.jpeg" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">Portfolio</h6>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/1nahuel21/AP-modulo-2/settings">Link Portfolio</a>
+          </div>
         </div>
       </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+          <img src="/IMG/pagina-encuesta.jpeg" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">pagina encuesta Freecodecamp</h6>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/1nahuel21/Ejercicios/tree/main/freecopecamp%20proyectos/pagina-formulario-encuesta">Link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+          <img src="/IMG/pagina-homenaje.jpeg" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">pagina legado Freecodecamp</h6>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/1nahuel21/Ejercicios/tree/main/freecopecamp%20proyectos/pagina-legado-fcp">Link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 100%;">
+          <img src="/IMG/documentacin-tecnica-Js.jpeg" alt="">
+          <div class="card-body">
+            <h6 class="card-title text-center">pagina documentacin tecnica Js Freecodecamp</h6>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/1nahuel21/Ejercicios/tree/main/freecopecamp%20proyectos/pagina-documentacion-tecnica">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 </main>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
