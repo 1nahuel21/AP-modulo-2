@@ -18,4 +18,5 @@ main{
 }
 .card{
     width: 70rem;
+    height: 100%; border-radius: 0%;
 }
