@@ -1,6 +1,7 @@
 #BANNER{
     max-height: 400px;
     border-radius: 0px;
+    max-width: 100rem !important;
 }
 #FotoPerfil{
     height: 250px;
@@ -16,7 +17,10 @@ main{
     display: grid !important;;
     justify-content: center!important;
 }
-.card{
-    width: 70rem;
-    height: 100%; border-radius: 0%;
+
+.nes-container{
+    width: 90% !important;
+    height: 100%;
+    border-radius: 0%;
+    justify-self: center;
 }
